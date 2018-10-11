@@ -1,0 +1,13 @@
+<div class="card d-flex m-4 userCard " (click)="active(user.id)" appSelectUser>
+    <div class="card-body">
+        <h2>User #{{user.id}}</h2>
+        <h5 class="card-title">{{user.name}}</h5>
+        <ul>
+            <li>username: {{user.username}} </li>
+            <li>email: {{user.email}}</li>
+            <div *ngIf="isActive">
+                <app-all-info [user]="user"></app-all-info>
+            </div>
+        </ul>
+    </div>
+</div>

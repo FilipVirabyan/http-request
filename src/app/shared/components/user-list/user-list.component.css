@@ -1,0 +1,9 @@
+.userCard{
+    height: 200px;
+    width: 355px;
+}
+.select {
+    background-color: darksalmon;
+    cursor: pointer;
+    height: 400px;
+}

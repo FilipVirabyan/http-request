@@ -1,0 +1,12 @@
+<div class="card m-2 post">
+  <p>userId: {{post.userId}}</p>
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">id: {{post.id}}</h6>
+    <p class="card-text">{{post.body}}</p>
+    <button (click)="active(post.id)" class="btn btn-primary">Show Comments</button>
+    <div *ngIf="isActive">
+      <app-comments *ngFor="let comment of comments" [comment]="comment"></app-comments>
+    </div>
+  </div>
+</div>
